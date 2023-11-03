@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Calculadora
+comment1.params=n1\ n2
+comment1.target=Calculadora(long,\ long)
+comment2.params=num1\ num2
+comment2.target=void\ SetOperaciones(long,\ long)
+comment3.params=num1\ num2
+comment3.target=long\ GetSuma(long,\ long)
+comment4.params=num1\ num2
+comment4.target=long\ GetResta(long,\ long)
+comment5.params=num1\ num2
+comment5.target=long\ GetProducto(long,\ long)
+comment6.params=num1\ num2
+comment6.target=long\ GetDivision(long,\ long)
+comment7.params=num1\ num2
+comment7.target=long\ GetModulo(long,\ long)
+numComments=8

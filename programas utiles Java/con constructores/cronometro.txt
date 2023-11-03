@@ -1,0 +1,41 @@
+/**
+* Clase Cronometro: muestra el uso de constructores
+* Para medir el tiempo transcurrido entre la ultima llamada a
+* ponerACero() y la llamada al metodo tiempoTranscurrido().
+* Noviembre de 2005. Adaptado de S.J. Chapman
+*/
+public class Cronometro {
+ private double tiempo;
+ // Constructor
+ public Cronometro() {
+ ponerACero();
+ }
+ // Metodo ponerACero
+ public void ponerACero() {
+ tiempo = System.currentTimeMillis(); // Metodo predefinido en Java
+ }
+ // Metodo tiempoTranscurrido: devuelve el tiempo transcurrido en segundos
+ public double tiempoTranscurrido() {
+ double tt;
+ tt = (System.currentTimeMillis() - tiempo) / 1000;
+ return tt;
+ }
+}
+La clase PruebaCronometro incluye un método principal que muestra el uso de la anterior:
+/**
+* PruebaCronometro: muestra el uso de la clase Cronometro
+* Noviembre de 2005.
+*/
+public class PruebaCronometro {
+ public static void main(String[] args) {
+ int i,j,k;
+ Cronometro t = new Cronometro();
+ for (i=1; i<=10000; i++) {
+ for (j=1; j<=10000; j++) {
+ k=i+j;
+ }
+ }
+ System.out.println("Fin del bucle...");
+ System.out.println("Tiempo = " + t.tiempoTranscurrido() + " s");
+ }
+}

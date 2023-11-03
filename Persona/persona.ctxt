@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=persona
+comment1.params=
+comment1.target=persona()
+comment1.text=public\ static\ void\ main()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ Scanner\ sc\ \=\ new\ Scanner(System.in);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ System.out.println("Ingrese\ la\ cadena\:");\r\n\ \ \ \ \ \ \ String\ nombre\ \=\ sc.nextLine();\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ //System.out.println("Ingrese\ el\ telefono\:");\r\n\ \ \ \ \ \ \ \ //long\ telefono\ \=\ tel;\r\n\ \ \ \ \ \ \ \ //System.out.println(nombre);\r\n\ \ \ \ \ \ \ \ \r\n}
+comment2.params=nombre
+comment2.target=void\ getNom(java.lang.String[])
+comment2.text=\ public\ void\ setNom()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ Scanner\ sc\ \=\ new\ Scanner(System.in);\r\n\ \ \ \ \ \ \ \ System.out.println("Ingrese\ la\ cadena\:");\r\n\ \ \ \ \ \ \ String\ nombre\ \=\ sc.nextLine();\r\n\ \ \ \ \ \ //nombre\=nom;\r\n\ \ \ \ }\r\n
+numComments=3

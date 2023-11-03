@@ -1,0 +1,17 @@
+ import java.util.Scanner;
+
+  public class Ejercicio3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese un número:");
+        int n = sc.nextInt();
+        System.out.println("El numero es " + n);
+        int cantidad = 0;
+        while (n > 0) {
+            n = n/10;
+            cantidad++;
+        }
+        System.out.println("La cantidad de digitos que tiene es " + cantidad);
+    }
+
+  }

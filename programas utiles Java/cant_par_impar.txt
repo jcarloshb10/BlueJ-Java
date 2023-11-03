@@ -1,0 +1,41 @@
+import java.util.Scanner;
+  public class Quinto {
+    public static void main(String[]args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el tamanio del arreglo:");
+        int tam = sc.nextInt();
+        int[]nums = new int[tam];
+        System.out.println("Ingrese los elementos del arreglo uno por uno");
+        for(int i = 0; i < nums.length; i++) {
+            nums[i] = sc.nextInt();
+        }
+        int par = 0;
+        for(int i = 0; i < nums.length; i++) {
+            if(nums[i] % 2 == 0) //contamos cuantos pares existen
+                par++;
+        }
+        int[]pares = new int[par]; //creamos un arreglo de "par" cantidad de pares
+        int[]impares = new int[nums.length - par]; // creamos otros arreglo para impares
+        int j = 0;
+        int k = 0;
+        for(int i = 0; i < nums.length; i++) {
+            if(nums[i] % 2 == 0){
+                pares[j] = nums[i]; //guardamos cada par que encontremos
+                j++;
+            } else {
+                impares[k] = nums[i]; //guardamos cada impar que encontremos
+                k++;
+            }
+                
+        }
+        System.out.println("Numeros pares: ");
+        for(int i = 0; i < pares.length; i++) {
+            System.out.print(pares[i] + "  ");
+        }
+        System.out.println();
+        System.out.println("Numeros impares: ");
+        for(int i = 0; i < impares.length; i++) {
+            System.out.print(impares[i] + "  ");
+        }
+    }
+  }

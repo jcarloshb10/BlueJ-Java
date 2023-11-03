@@ -1,0 +1,49 @@
+enum TipoHorario {H24,H12};
+public class Relojes {
+
+    private int hora, minutos, segundos;
+    
+    private void compruebaHora(int hora, int minutos, int segundos) throws Exception{
+    
+        if(hora23)
+            throw new Exception(“Error en la hora”);
+        if(minutos59)
+            throw new Exception(“Error en los minutos”);
+        if(segundos59)
+            throw new Exception(“Error en segundos”);
+        
+    }
+    
+    public Relojes(){
+        hora=minutos=0;
+    }
+
+    public Relojes(int hora, int minutos, int segundos) throws Exception {
+        compruebaHora(hora, minutos, segundos);
+        this.hora = hora;
+        this.minutos = minutos;
+        this.segundos = segundos;
+    }
+
+    public Relojes(int hora, int minutos) throws Exception {
+        this(hora,minutos,0);
+    }
+    
+    String dameHora(){
+        return hora +”;”+minutos+”:”+segundos;
+    }
+    
+    String dameHora(TipoHorario tipo){
+        String resultado;
+        
+        if(tipo==TipoHorario.H12 && hora>12)
+            resultado=””+(hora-12);
+        else
+            resultado=””+hora;
+        resultado+=”:”+minutos+”:”+segundos+((hora<12)?"am":"pm");
+        
+        return resultado;
+    }
+    
+
+}

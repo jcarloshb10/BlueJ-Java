@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=ProyectoEmpleados
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment10.params=
+comment10.target=void\ ordenarPorSalario()
+comment11.params=
+comment11.target=void\ mostrarEmpleadosYSalarios()
+comment2.params=
+comment2.target=void\ leerEmpleados()
+comment3.params=
+comment3.target=void\ mostrar()
+comment4.params=
+comment4.target=double\ leerImporteHorasExtras()
+comment5.params=
+comment5.target=int\ numeroDeEmpleados()
+comment6.params=
+comment6.target=Empleado\ empleadoQueMasCobra()
+comment7.params=
+comment7.target=Empleado\ empleadoQueMenosCobra()
+comment8.params=
+comment8.target=Empleado\ empleadoQueMasCobraPorHorasExtras()
+comment9.params=
+comment9.target=Empleado\ empleadoQueMenosCobraPorHorasExtras()
+numComments=12

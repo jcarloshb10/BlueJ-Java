@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CLASEA
+comment1.params=
+comment1.target=void\ autenticar()
+comment2.params=nombre
+comment2.target=void\ getNombre(java.lang.String)
+numComments=3

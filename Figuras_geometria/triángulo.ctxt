@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=tri\u00E1ngulo
+comment1.params=b
+comment1.target=void\ setbase(double)
+comment2.params=
+comment2.target=double\ getbase()
+comment3.params=al
+comment3.target=void\ setaltura(double)
+comment4.params=
+comment4.target=double\ getaltura()
+comment5.params=
+comment5.target=double\ getarea()
+numComments=6

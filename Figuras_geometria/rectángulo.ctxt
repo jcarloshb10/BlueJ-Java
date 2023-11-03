@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=rect\u00E1ngulo
+comment1.params=l1
+comment1.target=void\ setl1(double)
+comment2.params=
+comment2.target=double\ getl1()
+comment3.params=l2
+comment3.target=void\ setl2(double)
+comment4.params=
+comment4.target=double\ getl2()
+comment5.params=
+comment5.target=double\ getarea()
+numComments=6

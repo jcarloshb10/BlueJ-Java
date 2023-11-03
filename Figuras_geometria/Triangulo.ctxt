@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Triangulo
+comment1.params=b\ al
+comment1.target=Triangulo(double,\ double)
+comment2.params=b
+comment2.target=Triangulo(double)
+comment3.params=
+comment3.target=Triangulo()
+comment4.params=b
+comment4.target=void\ setbase(double)
+comment5.params=
+comment5.target=double\ getbase()
+comment6.params=al
+comment6.target=void\ setaltura(double)
+comment7.params=
+comment7.target=double\ getaltura()
+comment8.params=
+comment8.target=double\ area()
+numComments=9

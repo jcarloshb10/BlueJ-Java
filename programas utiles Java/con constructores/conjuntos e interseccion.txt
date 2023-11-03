@@ -1,0 +1,18 @@
+class Conjunto {
+Object elementos[];
+Conjunto (Vector elems) {
+elementos = new Object [elems.size ()];
+for (int i = 0; i < elementos.length; i++)
+elementos [i] = elems.elementAt (i);
+}
+Conjunto interseccion (Conjunto conj) {
+Vector inter = new Vector ();
+for (int i = 0; i < elementos.length; i++)
+for (int j = 0; j < conj.elementos.length; j++)
+if (elementos[i].equals (conj.elementos[j])) {
+inter.addElement (elementos[i]);
+break;
+}
+return new Conjunto (inter);
+}
+}

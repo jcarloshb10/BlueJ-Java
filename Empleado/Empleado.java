@@ -1,29 +1,50 @@
-public class Empleado
-{
-   
-    private Aplicación nombre, apellido, genero; 
-    private int salario;
-    private Fechas fecha_nac, fecha_ingr;
-    private Aplicación datos;
+public class Empleado{
+    //Atributos
+    private String nombre , apellido ; 
+    private double salario;
+    private double prestaciones;
+    private char genero;
     
-    public Empleado(String nom, String apelli, String gene, int sal, Fechas fecha_nac, Fechas fecha_ingr)
-    {
-           String nombre=nom;
-           String apellido= apelli;
-           String genero=gene;
-           int salario=sal;
-           //Fechas fecha_nac=10;
+    //Constructor con parametros
+    public Empleado(String nombre , String apellido , double salario , char genero){
+        this.nombre = nombre ; 
+        this.apellido = apellido ; 
+        this.genero = genero ; 
+        this.salario = salario ;
+        this.prestaciones= (salario*0.0735);
     }
     
-    /*public String getNom(String nombre)
-    {
-        //emp.getNom(nombre);
-        //Aplicación nombre;
-       nombre=nombre;
-       return (nombre);
-       //System.out.println(nombre);
-    }*/
+    //constructor por defecto
+    public Empleado(){
+    }
+    
+    //setters y getters
+    public void setNom (String nomb ){
+        this.nombre=nomb;
+    }
+    public String getNom (){
+        return nombre ;
+    }
+    public void setApe ( String ape ){
+        this.apellido = ape ;
+    }
+    public String getApe (){
+        return apellido ; 
+    }
+    public void setGen ( char gen){
+        this.genero = gen ; 
+    }
+    public char getGen (){
+        return genero ; 
+    }
+    public void setSal ( double sal ){
+        this.salario = sal ;
+        this.prestaciones = (this.salario*0.735) ; 
+    }
+    public double getSal (){
+        return salario ; 
+    }
+    public double getPres(){
+        return prestaciones;
+    }
 }
-
-
-
